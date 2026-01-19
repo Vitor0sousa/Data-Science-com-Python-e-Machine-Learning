@@ -1,0 +1,20 @@
+
+--sistema de chave estrangeira
+/*
+constraint nome_da_fk foreign key(campo)
+references nome tabela(campo-chave primaria)
+
+*/
+-- COD_DEPTO
+--COD_CARGO
+alter table TB_EMPREGADO
+ADD
+CONSTRAINT FK_CODDEPTO FOREIGN KEY(COD_DEPTO)
+REFERENCES TB_departamneto(COD_DEPTO)
+
+ALTER TABLE TB_EMPREGADO
+ADD 
+CONSTRAINT FK_CODCARGO FOREIGN KEY(COD_CARGO)
+REFERENCES TB_CARGO(COD_CARGO)
+-- VIZU A ESTRUTURA DA TABELA EMPREGADO
+EXEC SP_HELP TB_EMPREGADO

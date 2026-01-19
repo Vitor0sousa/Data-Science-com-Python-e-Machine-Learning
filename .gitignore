@@ -1,0 +1,39 @@
+### --- EXCLUIR PASTAS DE EDITORES (O seu caso inicial) ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+### --- EXCLUIR AMBIENTES VIRTUAIS (Essenciais para Python) ---
+venv/
+env/
+.env/
+bin/
+lib/
+Include/
+Scripts/
+
+### --- EXCLUIR CACHE E ARQUIVOS TEMPORÁRIOS DO PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+### --- EXCLUIR ARQUIVOS DO JUPYTER NOTEBOOK ---
+.ipynb_checkpoints
+.virtual_documents/
+
+### --- EXCLUIR DADOS E LOGS (Evitar subir arquivos gigantes) ---
+*.log
+*.csv
+*.xlsx
+*.sqlite
+# Se você quiser subir CSVs pequenos, comente a linha acima com um #
+
+### --- EXCLUIR ARQUIVOS DO SISTEMA ---
+.DS_Store
+Thumbs.db
